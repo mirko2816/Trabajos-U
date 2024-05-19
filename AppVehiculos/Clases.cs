@@ -70,15 +70,15 @@ namespace EspacioDeNombres
             aAnio = 1886;
         }
 
-        public cAuto(string pPlaca, string pMarca, string pModelo, int pAnio) : base(pPlaca, pMarca, pModelo)
+        public cAuto(string pPlaca, string pMarca, string pModelo, int pNroRuedas) : base(pPlaca, pMarca, pModelo)
         {
-            if (pAnio >= 1886)
+            if (pNroRuedas < 4)
             {
-                aAnio = pAnio;
+                aAnio = 4;
             }
             else 
             {
-                aAnio = 1886;
+                aAnio = pNroRuedas;
             }
         }
 
@@ -120,12 +120,12 @@ namespace EspacioDeNombres
         private int aNroRuedas;
 
         // Constructores
-        public cCamion()
+        public cCamion() : base()
         {
-            aNroRuedas = 0;
+            aNroRuedas = 4;
         }
 
-        public cCamion(int pNroRuedas)
+        public cCamion(string pPlaca, string pMarca, string pModelo, int pAnio) : base(pPlaca, pMarca, pModelo)
         {
             aNroRuedas = pNroRuedas;
         }
