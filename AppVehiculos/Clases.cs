@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices;
+
 namespace EspacioDeNombres
 {
     public abstract class cVehiculo
@@ -116,12 +118,26 @@ namespace EspacioDeNombres
             {
                 return 0;
             }
-            return 0;
         }
     }
 
     public class cCamion : cAuto
     {
-        
+        // Atributos
+        private int aNroRuedas;
+
+        // Constructores
+
+        // Propiedades
+
+        // Metodos
+        public override int CalcularPeaje() // segun al numero de ruedas
+        {
+            if (aNroRuedas > 4)
+            {
+                return 20;
+            } 
+            else { return 0; }
+        }
     }
 }
