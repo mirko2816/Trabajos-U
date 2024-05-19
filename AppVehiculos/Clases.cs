@@ -54,17 +54,10 @@ namespace EspacioDeNombres
         }
         public abstract int CalcularPeaje();
 
-        public override bool Equals(object? vehiculo)
+        public override bool Equals(object pPlaca)
         {
-            if (aPlaca == ((cVehiculo)vehiculo).Placa)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }   
+            return aPlaca.Equals(pPlaca.ToString());
+        }
     }
 
     public class cAuto : cVehiculo
