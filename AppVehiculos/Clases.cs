@@ -1,3 +1,9 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace EspacioDeNombres
 {
     public abstract class cVehiculo
@@ -50,10 +56,7 @@ namespace EspacioDeNombres
             Console.WriteLine($"Placa: {aMarca}");
             Console.WriteLine($"Placa: {aModelo}");
         }
-        public abstract int CalcularPeaje()
-        {
-            
-        }
+        public abstract int CalcularPeaje();
 
         public override bool Equals(object? vehiculo)
         {
@@ -115,11 +118,11 @@ namespace EspacioDeNombres
             {
                 return 10;
             }
-            else (Antiguedad)
+            else    
             {
                 return 0;
             }
-                
+            return 0;
         }
     }
 }
