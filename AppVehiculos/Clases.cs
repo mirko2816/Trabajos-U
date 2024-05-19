@@ -127,9 +127,30 @@ namespace EspacioDeNombres
         private int aNroRuedas;
 
         // Constructores
+        public cCamion()
+        {
+            aNroRuedas = 0;
+        }
+
+        public cCamion(int pNroRuedas)
+        {
+            aNroRuedas = pNroRuedas;
+        }
 
         // Propiedades
-
+        public int NroRuedas
+        {
+            get { return aNroRuedas;}
+            set
+            {
+                if ((value < 0)) {
+                    aNroRuedas = 0;
+                } 
+                else {
+                    aNroRuedas = value;
+                }
+            }
+        }
         // Metodos
         public override int CalcularPeaje() // segun al numero de ruedas
         {
@@ -137,7 +158,7 @@ namespace EspacioDeNombres
             {
                 return 20;
             } 
-            else { return 0; }
+            else { return 10; }
         }
     }
 }
