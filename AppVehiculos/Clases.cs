@@ -1,12 +1,10 @@
-using System.Runtime.InteropServices;
-
 namespace EspacioDeNombres
 {
     public abstract class cVehiculo
     {
-        private string aPlaca;
-        private string aMarca;
-        private string aModelo;
+        protected string aPlaca;
+        protected string aMarca;
+        protected string aModelo;
 
         public cVehiculo()
         {
@@ -37,23 +35,14 @@ namespace EspacioDeNombres
             set { aModelo = value; }
         }
         // Metodos
-        public virtual void Leer()
-        {
-            Console.Write("Placa:");
-            aPlaca = Console.ReadLine();
-            Console.Write("Marca:");
-            aMarca = Console.ReadLine();
-            Console.Write("Modelo:");
-            aModelo = Console.ReadLine();
-        }
         public virtual void Mostrar()
         {
             Console.WriteLine($"Placa: {aPlaca}");
-            Console.WriteLine($"Placa: {aMarca}");
-            Console.WriteLine($"Placa: {aModelo}");
+            Console.WriteLine($"Marca: {aMarca}");
+            Console.WriteLine($"Modelo: {aModelo}");
         }
         public abstract int CalcularPeaje();
-
+        public abstract void Leer();
         public override bool Equals(object pPlaca)
         {
             return aPlaca.Equals(pPlaca.ToString());
@@ -95,6 +84,24 @@ namespace EspacioDeNombres
             }
         }
         // Metodos
+        public override void Leer()
+        {
+            Console.Write("Placa:");
+            Placa = Console.ReadLine();
+            Console.Write("Marca:");
+            Marca = Console.ReadLine();
+            Console.Write("Modelo:");
+            Modelo = Console.ReadLine();
+            Console.Write("Año:");
+            Anio = int.Parse(Console.ReadLine());
+        }
+        public override void Mostrar()
+        {
+            Console.WriteLine($"Placa: {Placa}");
+            Console.WriteLine($"Marca: {Marca}");
+            Console.WriteLine($"Modelo: {Modelo}");
+            Console.WriteLine($"Año: {Anio}");
+        }
         public override int CalcularPeaje()
         {
             int anioActual = DateTime.Now.Year;
@@ -156,6 +163,24 @@ namespace EspacioDeNombres
             }
         }
         // Metodos
+        public override void Leer()
+        {
+            Console.Write("Placa:");
+            Placa = Console.ReadLine();
+            Console.Write("Marca:");
+            Marca = Console.ReadLine();
+            Console.Write("Modelo:");
+            Modelo = Console.ReadLine();
+            Console.Write("Nro de Ruedas:");
+            NroRuedas = int.Parse(Console.ReadLine()) ;
+        }
+        public override void Mostrar()
+        {
+            Console.WriteLine($"Placa: {Placa}");
+            Console.WriteLine($"Marca: {Marca}");
+            Console.WriteLine($"Modelo: {Modelo}");
+            Console.WriteLine($"Nro Ruedas: {NroRuedas}");
+        }
         public override int CalcularPeaje() // segun al numero de ruedas
         {
             if (aNroRuedas > 4)
@@ -167,7 +192,23 @@ namespace EspacioDeNombres
     }
 
     public static class Control
-    {
+    {   
+        // Retornara True si el vehiculo esta en la lista y False si no lo esta
+        private static bool VerificarVehiculo(cVehiculo vehiculo, cVehiculo[] lista)
+        {
+            bool isIn = false; // por defecto consideramos que no esta en la lista
+            for (int i = 0; i < lista.Length; i++)
+            {
+                if (lista[i] != null)
+                {
+                    if (vehiculo.Equals(lista[i].Placa))
+                    {
+                        isIn = true;
+                    }
+                }
+            }
+            return isIn;
+        }
         // Metodos que reciben la opcion y el array
         public static int ElegirOpcion()
         {
@@ -178,13 +219,73 @@ namespace EspacioDeNombres
             Console.WriteLine("4. Total Peaje");
             Console.WriteLine("5. Nro de autos y camiones");
             Console.Write("Opcion --> ");
-            int opcion = int.Parse(Console.ReadLine());
+            int opcion = int.Parse(Console.ReadLine() ??  string.Empty);
             return opcion;
         }
 
-        public static void Opcion(int i, cVehiculo[] listaDeVehiculos)
+        public static void Listar(cVehiculo[] listaDeVehiculos)
         {
-            
+            Console.WriteLine("\n---LISTA DE VEHICULOS---\n");
+            for (int i = 0;i < listaDeVehiculos.Length; i++)
+            {
+                if (listaDeVehiculos[i] != null)
+                {
+                    listaDeVehiculos[i].Mostrar();  
+                    Console.WriteLine("");
+                }
+            }
+        }
+
+        public static void Insertar(cVehiculo[] listaDeVehiculos)
+        {
+            bool isFull = true; 
+            Console.WriteLine("\nDigite el numero del Vehiculo que desea agregar:");
+            Console.WriteLine("1. Auto");
+            Console.WriteLine("2. Camion");
+            Console.Write("Opcion -->");
+            int opcion = int.Parse(Console.ReadLine());
+
+            if (opcion == 1)
+            {
+                for(int i = 0; i < listaDeVehiculos.Length; i++)
+                {
+                    if (listaDeVehiculos[i] == null)
+                    {
+                        // insertar el vehiculo en la posicion i y marca que NO esta lleno
+                        cVehiculo v = new cAuto();
+                        v.Leer();
+                        // Verificamos que no este en la lista
+                        if(! VerificarVehiculo(v, listaDeVehiculos))
+                        {
+                            isFull = false;
+                            listaDeVehiculos[i] = v; 
+                        }
+                        else {Console.WriteLine($"El vehiculo de placa {v.Placa} ya se encuentra registrado");}
+                    }
+                }
+            }
+            else if (opcion == 2)
+            {
+                for(int i = 0; i < listaDeVehiculos.Length; i++)
+                {
+                    if (listaDeVehiculos[i] == null)
+                    {
+                        // insertar el vehiculo en la posicion i y marca que NO esta lleno
+                        cVehiculo v = new cCamion();
+                        v.Leer();
+                        // Verificamos que no este en la lista
+                        if(! VerificarVehiculo(v, listaDeVehiculos))
+                        {
+                            isFull = false;
+                            listaDeVehiculos[i] = v; 
+                        }
+                        else {Console.WriteLine($"El vehiculo de placa {v.Placa} ya se encuentra registrado");}
+                    }
+                }
+            }
+            else {Console.WriteLine("No se escogio ninguna opcion expuesta.");}
+
+            if (isFull) {Console.WriteLine("La lista se encuentra llena");}
         }
     }
 }
