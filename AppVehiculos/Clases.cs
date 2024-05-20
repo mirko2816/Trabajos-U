@@ -1,3 +1,4 @@
+
 namespace EspacioDeNombres
 {
     public abstract class cVehiculo
@@ -86,13 +87,13 @@ namespace EspacioDeNombres
         // Metodos
         public override void Leer()
         {
-            Console.Write("Placa:");
+            Console.Write("Placa: ");
             Placa = Console.ReadLine();
-            Console.Write("Marca:");
+            Console.Write("Marca: ");
             Marca = Console.ReadLine();
-            Console.Write("Modelo:");
+            Console.Write("Modelo: ");
             Modelo = Console.ReadLine();
-            Console.Write("Año:");
+            Console.Write("Año: ");
             Anio = int.Parse(Console.ReadLine());
         }
         public override void Mostrar()
@@ -165,13 +166,13 @@ namespace EspacioDeNombres
         // Metodos
         public override void Leer()
         {
-            Console.Write("Placa:");
+            Console.Write("Placa: ");
             Placa = Console.ReadLine();
-            Console.Write("Marca:");
+            Console.Write("Marca: ");
             Marca = Console.ReadLine();
-            Console.Write("Modelo:");
+            Console.Write("Modelo: ");
             Modelo = Console.ReadLine();
-            Console.Write("Nro de Ruedas:");
+            Console.Write("Nro de Ruedas: ");
             NroRuedas = int.Parse(Console.ReadLine()) ;
         }
         public override void Mostrar()
@@ -241,7 +242,7 @@ namespace EspacioDeNombres
         {
             if (isFull) 
             {
-                Console.WriteLine("La lista se encuentra llena");
+                Console.WriteLine("\nLa lista se encuentra LLENA");
             }
             else
             {
@@ -333,6 +334,40 @@ namespace EspacioDeNombres
             {
                 Console.WriteLine($"\nVehiculo de placa: {placa} no fue encontrado.");
             }  
+        }
+
+        public static void CalcularTotalPeaje(cVehiculo[] listaDeVehiculos)
+        {
+            int totalPeaje = 0;
+
+            for (int i = 0; i < listaDeVehiculos.Length; i++)
+            {   
+                if (listaDeVehiculos[i] != null)
+                {
+                    totalPeaje = totalPeaje + listaDeVehiculos[i].CalcularPeaje();
+                }
+            }
+            Console.WriteLine("\n--- PEAJE ---");
+            Console.WriteLine($"El peaje total es de S/.{totalPeaje}");
+        }
+
+        public static void ContarAutosCamiones(cVehiculo[] listaDeVehiculos)
+        {
+            int nroAutos = 0;
+            int nroCamiones = 0;
+
+            for (int i = 0; i < listaDeVehiculos.Length; i++)
+            {   
+                if (listaDeVehiculos[i] != null)
+                {
+                    if (listaDeVehiculos[i] is cAuto){nroAutos++;}
+                    else {nroCamiones++;}
+                }
+            }
+
+            Console.WriteLine($"\n--- CANTIDAD ---");
+            Console.WriteLine($"Autos: {nroAutos}");
+            Console.WriteLine($"Camiones: {nroCamiones}");
         }
     }
 }

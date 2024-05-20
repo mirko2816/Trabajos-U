@@ -1,13 +1,11 @@
 ﻿using EspacioDeNombres;
-using System;
-using System.Timers;
 
 class Program 
 {
     static void Main(string[] args)  
     {
-        cVehiculo v1 = new cAuto("DEF", "TOYOTA", "AVA", 2020);
-        cVehiculo v2 = new cCamion("ABC", "HYUNDAI", "SANTAFE", 2022);
+        cVehiculo v1 = new cAuto("DEF", "TOYOTA", "AVA", 2024);
+        cVehiculo v2 = new cCamion("ABC", "HYUNDAI", "SANTAFE", 4);
 
         cVehiculo[] lVehiculos = new cVehiculo[3];
 
@@ -33,11 +31,11 @@ class Program
             }
             if (opcion == 4)
             {
-                // Control.CalcularTotalPeaje(lVehiculos);
+                Control.CalcularTotalPeaje(lVehiculos);
             }
             if (opcion == 5)
             {
-                // Control.ContarAutosCamiones(lVehiculos);
+                Control.ContarAutosCamiones(lVehiculos);
             }
         }
         
