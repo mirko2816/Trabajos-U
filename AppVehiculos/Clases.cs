@@ -212,12 +212,13 @@ namespace EspacioDeNombres
         // Metodos que reciben la opcion y el array
         public static int ElegirOpcion()
         {
-            Console.WriteLine("MENU DE VEHICULOS");
+            Console.WriteLine("\n--- MENU DE VEHICULOS ---");
             Console.WriteLine("1. Listar");
             Console.WriteLine("2. Insertar");
             Console.WriteLine("3. Buscar");
             Console.WriteLine("4. Total Peaje");
             Console.WriteLine("5. Nro de autos y camiones");
+            Console.WriteLine("6. Salir");
             Console.Write("Opcion --> ");
             int opcion = int.Parse(Console.ReadLine() ??  string.Empty);
             return opcion;
@@ -225,7 +226,7 @@ namespace EspacioDeNombres
 
         public static void Listar(cVehiculo[] listaDeVehiculos)
         {
-            Console.WriteLine("\n---LISTA DE VEHICULOS---\n");
+            Console.WriteLine("\n--- LISTA DE VEHICULOS ---\n");
             for (int i = 0;i < listaDeVehiculos.Length; i++)
             {
                 if (listaDeVehiculos[i] != null)
@@ -235,59 +236,103 @@ namespace EspacioDeNombres
                 }
             }
         }
-
+        static bool isFull = false;
         public static void Insertar(cVehiculo[] listaDeVehiculos)
         {
-            bool isFull = true; 
-            Console.WriteLine("\nDigite el numero del Vehiculo que desea agregar:");
-            Console.WriteLine("1. Auto");
-            Console.WriteLine("2. Camion");
-            Console.Write("Opcion -->");
-            int opcion = int.Parse(Console.ReadLine());
-
-            if (opcion == 1)
+            if (isFull) 
             {
-                for(int i = 0; i < listaDeVehiculos.Length; i++)
+                Console.WriteLine("La lista se encuentra llena");
+            }
+            else
+            {
+                Console.WriteLine("\nDigite el numero del Vehiculo que desea agregar:");
+                Console.WriteLine("1. Auto");
+                Console.WriteLine("2. Camion");
+                Console.Write("Opcion --> ");
+                int opcion = int.Parse(Console.ReadLine());
+
+                if (opcion == 1)
                 {
-                    if (listaDeVehiculos[i] == null)
+                    for(int i = 0; i < listaDeVehiculos.Length; i++)
                     {
-                        // insertar el vehiculo en la posicion i y marca que NO esta lleno
-                        cVehiculo v = new cAuto();
-                        v.Leer();
-                        // Verificamos que no este en la lista
-                        if(! VerificarVehiculo(v, listaDeVehiculos))
+                        if (listaDeVehiculos[i] == null)
                         {
-                            isFull = false;
-                            listaDeVehiculos[i] = v;
-                            break;
+                            // Leemos los datos del vehiculo a insertar 
+                            cVehiculo v = new cAuto();
+                            v.Leer();
+                            // Verificamos que no este en la lista
+                            if(! VerificarVehiculo(v, listaDeVehiculos))
+                            {
+                                if (i == listaDeVehiculos.Length - 1) // Si el indice llega al final
+                                {
+                                    isFull = true;
+                                }
+                                listaDeVehiculos[i] = v;
+                                break;
+                            }
+                            else {Console.WriteLine($"El vehiculo de placa {v.Placa} ya se encuentra registrado");break;}
                         }
-                        else {Console.WriteLine($"El vehiculo de placa {v.Placa} ya se encuentra registrado");break;}
+                    }
+                }
+                else if (opcion == 2)
+                {
+                    for(int i = 0; i < listaDeVehiculos.Length; i++)
+                    {
+                        if (listaDeVehiculos[i] == null)
+                        {
+                            // Leemos los datos del vehiculo a insertar 
+                            cVehiculo v = new cCamion();
+                            v.Leer();
+                            // Verificamos que no este en la lista
+                            if(! VerificarVehiculo(v, listaDeVehiculos))
+                            {
+                                if (i == listaDeVehiculos.Length - 1) // Si el indice llega al final
+                                {
+                                    isFull = true;
+                                }
+                                listaDeVehiculos[i] = v; 
+                                break;
+                            }
+                            else {Console.WriteLine($"El vehiculo de placa {v.Placa} ya se encuentra registrado");break;}
+                        }
+                    }
+                }
+                else {Console.WriteLine("No eligio una opcion habilitada.");}
+            }
+            
+        }
+
+        public static void Buscar(cVehiculo[] listaDeVehiculos)
+        {
+            bool isIn = false;
+            int pos = 0;
+
+            // Pedimos el dato significativo (placa) que se desea buscar
+            Console.WriteLine("\n---BUSQUEDA POR PLACA---");
+            Console.Write("Placa: ");
+            string placa = Console.ReadLine();
+            
+            for (int i = 0; i < listaDeVehiculos.Length; i++)
+            {
+                if (listaDeVehiculos[i] != null)
+                {
+                    if (listaDeVehiculos[i].Equals(placa))
+                    {
+                        pos = i;
+                        isIn = true;
                     }
                 }
             }
-            else if (opcion == 2)
-            {
-                for(int i = 0; i < listaDeVehiculos.Length; i++)
-                {
-                    if (listaDeVehiculos[i] == null)
-                    {
-                        // insertar el vehiculo en la posicion i y marca que NO esta lleno
-                        cVehiculo v = new cCamion();
-                        v.Leer();
-                        // Verificamos que no este en la lista
-                        if(! VerificarVehiculo(v, listaDeVehiculos))
-                        {
-                            isFull = false;
-                            listaDeVehiculos[i] = v; 
-                            break;
-                        }
-                        else {Console.WriteLine($"El vehiculo de placa {v.Placa} ya se encuentra registrado");break;}
-                    }
-                }
-            }
-            else {Console.WriteLine("No se escogio ninguna opcion expuesta.");}
 
-            if (isFull) {Console.WriteLine("La lista se encuentra llena");}
+            if (isIn)
+            {
+                Console.WriteLine($"\nVehiculo de placa: {placa}");
+                Console.WriteLine($"Posicion: {pos+1}");
+            }
+            else
+            {
+                Console.WriteLine($"\nVehiculo de placa: {placa} no fue encontrado.");
+            }  
         }
     }
 }

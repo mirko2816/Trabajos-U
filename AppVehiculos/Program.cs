@@ -9,7 +9,7 @@ class Program
         cVehiculo v1 = new cAuto("DEF", "TOYOTA", "AVA", 2020);
         cVehiculo v2 = new cCamion("ABC", "HYUNDAI", "SANTAFE", 2022);
 
-        cVehiculo[] lVehiculos = new cVehiculo[10];
+        cVehiculo[] lVehiculos = new cVehiculo[3];
 
         lVehiculos[0] = v1;
         lVehiculos[1] = v2;
@@ -29,7 +29,7 @@ class Program
             }
             if (opcion == 3)
             {
-                // Control.Buscar(lVehiculos);
+                Control.Buscar(lVehiculos);
             }
             if (opcion == 4)
             {
