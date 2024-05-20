@@ -181,5 +181,10 @@ namespace EspacioDeNombres
             int opcion = int.Parse(Console.ReadLine());
             return opcion;
         }
+
+        public static void Opcion(int i, cVehiculo[] listaDeVehiculos)
+        {
+            
+        }
     }
 }
