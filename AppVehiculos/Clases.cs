@@ -165,4 +165,21 @@ namespace EspacioDeNombres
             else { return 10; }
         }
     }
+
+    public static class Control
+    {
+        // Metodos que reciben la opcion y el array
+        public static int ElegirOpcion()
+        {
+            Console.WriteLine("MENU DE VEHICULOS");
+            Console.WriteLine("1. Listar");
+            Console.WriteLine("2. Insertar");
+            Console.WriteLine("3. Buscar");
+            Console.WriteLine("4. Total Peaje");
+            Console.WriteLine("5. Nro de autos y camiones");
+            Console.Write("Opcion --> ");
+            int opcion = int.Parse(Console.ReadLine());
+            return opcion;
+        }
+    }
 }
