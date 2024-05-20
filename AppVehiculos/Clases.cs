@@ -199,7 +199,7 @@ namespace EspacioDeNombres
             bool isIn = false; // por defecto consideramos que no esta en la lista
             for (int i = 0; i < lista.Length; i++)
             {
-                if (lista[i] != null)
+                if (lista[i] != null) // Verifica que no comparemos con un objeto null
                 {
                     if (vehiculo.Equals(lista[i].Placa))
                     {
@@ -258,9 +258,10 @@ namespace EspacioDeNombres
                         if(! VerificarVehiculo(v, listaDeVehiculos))
                         {
                             isFull = false;
-                            listaDeVehiculos[i] = v; 
+                            listaDeVehiculos[i] = v;
+                            break;
                         }
-                        else {Console.WriteLine($"El vehiculo de placa {v.Placa} ya se encuentra registrado");}
+                        else {Console.WriteLine($"El vehiculo de placa {v.Placa} ya se encuentra registrado");break;}
                     }
                 }
             }
@@ -278,8 +279,9 @@ namespace EspacioDeNombres
                         {
                             isFull = false;
                             listaDeVehiculos[i] = v; 
+                            break;
                         }
-                        else {Console.WriteLine($"El vehiculo de placa {v.Placa} ya se encuentra registrado");}
+                        else {Console.WriteLine($"El vehiculo de placa {v.Placa} ya se encuentra registrado");break;}
                     }
                 }
             }
