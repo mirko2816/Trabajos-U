@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\bin\Debug\net8.0\AppCuentas.exe
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\bin\Debug\net8.0\AppCuentas.deps.json
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\bin\Debug\net8.0\AppCuentas.runtimeconfig.json
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\bin\Debug\net8.0\AppCuentas.dll
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\bin\Debug\net8.0\AppCuentas.pdb
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\obj\Debug\net8.0\AppCuentas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\obj\Debug\net8.0\AppCuentas.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\obj\Debug\net8.0\AppCuentas.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\obj\Debug\net8.0\AppCuentas.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\obj\Debug\net8.0\AppCuentas.sourcelink.json
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\obj\Debug\net8.0\AppCuentas.dll
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\obj\Debug\net8.0\refint\AppCuentas.dll
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\obj\Debug\net8.0\AppCuentas.pdb
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\obj\Debug\net8.0\AppCuentas.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Trabajos-U\AppCuentas\AppCuentas\obj\Debug\net8.0\ref\AppCuentas.dll
