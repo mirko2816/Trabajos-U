@@ -11,7 +11,7 @@ public class cNodo
     private cNodo aSgte;
 
     // Constructores
-    public cNodo()asdf
+    public cNodo()
     {
         aInfo = null;
         aSgte = null;
