@@ -14,36 +14,72 @@ public class cCtasBancarias
     }
 
     // Metodos de la clase
-    public void AgregarCtaAhorro()
+    private cCtaAhorros RecuperarCtaAhorros(string Cta)
     {
-        cCtaAhorros cta = new cCtaAhorros();
-        cta.Leer(); 
-        for (int i = 0; i < lCuentas.Length; i++)
+        for (int i = 0; i < aNroCuentas; i++)
         {
-            if (lCuentas[i] != null)
+            if (lCuentas[i] != null && lCuentas[i].NroCuenta == Cta)
             {
-                if (cta.NroCuenta == lCuentas[i].NroCuenta)
-                {
-                    Console.WriteLine("La cuenta ya se encuentra registrada.");
-                    break;
-                }
-                else if (lCuentas[i] != null)
-                {
-                    lCuentas[i] = cta;
-                    Console.WriteLine("Cuenta registrada correctamente."); 
-                }
+                return lCuentas[i];
             }
-            
+        }
+        return null; 
+    }
+
+    public void AgregarCtaAhorros()
+    {
+        if (aNroCuentas >= lCuentas.Length)
+        {
+            Console.WriteLine("No se pueden agregar más cuentas de ahorros.");
+            return;
+        }
+        else
+        {
+            cCtaAhorros nuevaCuenta = new cCtaAhorros();
+            nuevaCuenta.Leer();
+            lCuentas[aNroCuentas] = nuevaCuenta;
+            aNroCuentas++;
+            Console.WriteLine("Cuenta de ahorros agregada exitosamente.");
+        }
+        
+    }
+
+    public void BuscarCtaAhorros()
+    {
+        Console.Write("Ingrese el número de cuenta a buscar: ");
+        string numeroCuenta = Console.ReadLine();
+        cCtaAhorros cuenta = RecuperarCtaAhorros(numeroCuenta); // devolvera una cuenta con este numero de cuenta
+        if (cuenta != null)
+        {
+            cuenta.Mostrar();
+        }
+        else
+        {
+            Console.WriteLine("Cuenta no encontrada.");
         }
     }
-    
-    public void ListarCuentas()
+
+    public void ListarCtas()
     {
-        for (int i = 0; i < lCuentas.Length; i++)
+        Console.WriteLine("\nListar todas las cuentas de ahorros:");
+        for (int i = 0; i < aNroCuentas; i++)
         {
-            if (lCuentas[i] != null)
+            lCuentas[i].Mostrar();
+            Console.WriteLine();
+        }
+    }
+
+    public void ListarPorTipoAhorro()
+    {
+        Console.Write("Ingrese el tipo de ahorro a listar: ");
+        string tipoAhorro = Console.ReadLine();
+        Console.WriteLine("\nCuentas de ahorros del tipo " + tipoAhorro + ":");
+        for (int i = 0; i < aNroCuentas; i++)
+        {
+            if (lCuentas[i].TipoAhorro == tipoAhorro)
             {
                 lCuentas[i].Mostrar();
+                Console.WriteLine();
             }
         }
     }
@@ -60,9 +96,10 @@ public class Programa
         {
             Menu();
             opcion = Convert.ToInt32(Console.ReadLine());
-            if (opcion == 1){cuentas.AgregarCtaAhorro();}
-
-            if (opcion == 3){cuentas.ListarCuentas();}
+            if (opcion == 1){cuentas.AgregarCtaAhorros();}
+            if (opcion == 2){cuentas.BuscarCtaAhorros();}
+            if (opcion == 3){cuentas.ListarCtas();}
+            if (opcion == 4){cuentas.ListarPorTipoAhorro();}
         }
     }
 

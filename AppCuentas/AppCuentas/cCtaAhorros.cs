@@ -23,9 +23,9 @@ public class cCtaAhorros : cCtaBancaria
     {
         base.Leer();
         Console.Write("Ingrese Tipo de Ahorro: ");
-        NroCuenta = Console.ReadLine();
+        aTipoAhorro = Console.ReadLine();
         Console.Write("Ingrese Tasa de Interes: ");
-        NroCuenta = Console.ReadLine();
+        aTasaInteres = Convert.ToInt32(Console.ReadLine());
     }
 
     public override void Mostrar()
