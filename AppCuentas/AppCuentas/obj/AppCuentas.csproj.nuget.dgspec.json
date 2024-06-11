@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppCuentas\\AppCuentas\\AppCuentas.csproj": {}
+    "c:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppCuentas\\AppCuentas\\AppCuentas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppCuentas\\AppCuentas\\AppCuentas.csproj": {
+    "c:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppCuentas\\AppCuentas\\AppCuentas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppCuentas\\AppCuentas\\AppCuentas.csproj",
+        "projectUniqueName": "c:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppCuentas\\AppCuentas\\AppCuentas.csproj",
         "projectName": "AppCuentas",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppCuentas\\AppCuentas\\AppCuentas.csproj",
+        "projectPath": "c:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppCuentas\\AppCuentas\\AppCuentas.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppCuentas\\AppCuentas\\obj\\",
+        "outputPath": "c:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppCuentas\\AppCuentas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -36,7 +36,7 @@ public class cListaIterativa
         get {return aNroElementos;}
     }
 
-    // Metodo
+    // Metodos
     public bool EsVacio()
     {
         return aPrimerNodo == null;
@@ -66,4 +66,6 @@ public class cListaIterativa
 
         return nodoAux;
     }
+
+    
 }
