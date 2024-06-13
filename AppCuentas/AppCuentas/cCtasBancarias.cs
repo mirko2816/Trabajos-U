@@ -64,7 +64,8 @@ public class cCtasBancarias
         Console.WriteLine("\nListar todas las cuentas de ahorros:");
         for (int i = 0; i < aNroCuentas; i++)
         {
-            lCuentas[i].Mostrar();
+            
+            Console.WriteLine(lCuentas[i].NroCuenta);
             Console.WriteLine();
         }
     }
