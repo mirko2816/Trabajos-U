@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ListaIterativa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+404f0fd9cc8aea60c073da59819f4bb4cc2cdb7b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81e6ae196d3d658b274753c90e385646e5a34ec2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ListaIterativa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ListaIterativa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
