@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\obj\Debug\net8.0\vs2.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\obj\Debug\net8.0\vs2.0.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\obj\Debug\net8.0\vs2.0.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\obj\Debug\net8.0\vs2.0.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\obj\Debug\net8.0\vs2.0.sourcelink.json
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\bin\Debug\net8.0\vs2.0.exe
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\bin\Debug\net8.0\vs2.0.deps.json
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\bin\Debug\net8.0\vs2.0.runtimeconfig.json
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\bin\Debug\net8.0\vs2.0.dll
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\bin\Debug\net8.0\vs2.0.pdb
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\obj\Debug\net8.0\vs2.0.dll
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\obj\Debug\net8.0\refint\vs2.0.dll
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\obj\Debug\net8.0\vs2.0.pdb
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\obj\Debug\net8.0\vs2.0.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Trabajos-U\AppVehiculos\vs2.0\obj\Debug\net8.0\ref\vs2.0.dll
