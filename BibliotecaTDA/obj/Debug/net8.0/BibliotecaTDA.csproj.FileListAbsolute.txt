@@ -1,0 +1,12 @@
+/home/mircopc/Desktop/Trabajos-U/BibliotecaTDA/bin/Debug/net8.0/BibliotecaTDA.deps.json
+/home/mircopc/Desktop/Trabajos-U/BibliotecaTDA/bin/Debug/net8.0/BibliotecaTDA.dll
+/home/mircopc/Desktop/Trabajos-U/BibliotecaTDA/bin/Debug/net8.0/BibliotecaTDA.pdb
+/home/mircopc/Desktop/Trabajos-U/BibliotecaTDA/obj/Debug/net8.0/BibliotecaTDA.GeneratedMSBuildEditorConfig.editorconfig
+/home/mircopc/Desktop/Trabajos-U/BibliotecaTDA/obj/Debug/net8.0/BibliotecaTDA.AssemblyInfoInputs.cache
+/home/mircopc/Desktop/Trabajos-U/BibliotecaTDA/obj/Debug/net8.0/BibliotecaTDA.AssemblyInfo.cs
+/home/mircopc/Desktop/Trabajos-U/BibliotecaTDA/obj/Debug/net8.0/BibliotecaTDA.csproj.CoreCompileInputs.cache
+/home/mircopc/Desktop/Trabajos-U/BibliotecaTDA/obj/Debug/net8.0/BibliotecaTDA.sourcelink.json
+/home/mircopc/Desktop/Trabajos-U/BibliotecaTDA/obj/Debug/net8.0/BibliotecaTDA.dll
+/home/mircopc/Desktop/Trabajos-U/BibliotecaTDA/obj/Debug/net8.0/refint/BibliotecaTDA.dll
+/home/mircopc/Desktop/Trabajos-U/BibliotecaTDA/obj/Debug/net8.0/BibliotecaTDA.pdb
+/home/mircopc/Desktop/Trabajos-U/BibliotecaTDA/obj/Debug/net8.0/ref/BibliotecaTDA.dll
