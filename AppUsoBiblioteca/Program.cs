@@ -8,14 +8,14 @@ class Program
 
         do
         {
-            Console.WriteLine("\nMenú de Tareas Pendientes:");
+            Console.WriteLine("LISTA DE TAREAS");
             Console.WriteLine("1. Agregar tarea");
             Console.WriteLine("2. Listar tareas");
-            Console.WriteLine("3. Eliminar tarea");
-            Console.WriteLine("4. Buscar ubicación de una tarea");
-            Console.WriteLine("5. Verificar si la lista está vacía");
-            Console.WriteLine("6. Obtener longitud de la lista");
+            Console.WriteLine("3. Eliminar Tarea");
+            Console.WriteLine("4. Buscar tarea");
+            Console.WriteLine("5. Cantidad de Tareas");
             Console.WriteLine("0. Salir");
+            Console.Write("Seleccione una opción: ");
             Console.Write("Ingrese una opción: ");
             opcion = int.Parse(Console.ReadLine());
 
@@ -55,10 +55,6 @@ class Program
                     break;
 
                 case 5:
-                    Console.WriteLine("¿La lista está vacía? " + listaDeTareas.EsVacia());
-                    break;
-
-                case 6:
                     Console.WriteLine("La longitud de la lista es: " + listaDeTareas.Longitud());
                     break;
 
