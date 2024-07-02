@@ -1,116 +1,170 @@
-﻿using BibliotecaTDA;
-using Microsoft.VisualBasic;
-using System.Net.Http.Headers;
-
-public class cListaRecursiva
-{
-    // Atributos
-    private object aInformacion;
-    private cListaRecursiva aSubLista;
-
-    // Constructores
-    public cListaRecursiva()
+﻿public class cListaRecursiva
     {
-        aInformacion = null;
-        aSubLista = null;
-    }
+        private object aElemento;
+        private cListaRecursiva aSublista;
 
-    public cListaRecursiva(object pInformacion, cListaRecursiva pSubLista)
-    {
-        aInformacion = pInformacion;
-        aSubLista = pSubLista;
-    }
-
-    public object Informacion
-    { 
-        get { return aInformacion;} 
-        set { aInformacion = value;}
-    
-    }
-
-    public cListaRecursiva SubLista
-    {
-        get { return aSubLista;}
-        set { aSubLista = value;}   
-
-    }
-
-    public Boolean EsVacia()
-    {
-        return ((aInformacion == null) && (aSubLista == null));
-    }
-
-    // Metodos especiales
-    public void Eliminar(int posicion)
-    {
-        if (posicion == 1)
+        // Constructores
+        public cListaRecursiva()
         {
-            aInformacion = SubLista.Informacion;
-            SubLista = SubLista.SubLista;
+            aElemento = null;
+            aSublista = null;
         }
-        else
+        public cListaRecursiva(object pElemento)
         {
-            SubLista.Eliminar(posicion - 1);
+            aElemento = pElemento;
+            aSublista = null;
         }
-    }
+        public cListaRecursiva(object pElemento, cListaRecursiva pSubLista)
+        {
+            aElemento = pElemento;
+            aSublista = pSubLista;
+        }
+        // Getters y Setters
+        public object Elemento
+        {
+            get { return aElemento; }
+            set { aElemento = value; }
+        }
+        public cListaRecursiva SubLista
+        {
+            get { return aSublista; }
+            set { aSublista = value; }
+        }
 
-    public int Ubicacion(object pInformacion)
-    {
-        if (EsVacia())
+        // Metodos
+        public bool EsVacia()
         {
-            return 0;
+            return (aElemento == null && aSublista == null);
         }
-        else
+        public void Agregar(object valor)
         {
-            if (Informacion.Equals(pInformacion))
+            if (EsVacia())
+            {
+                aElemento = valor;
+            }
+            else
+            {
+                if (aSublista == null)
+                {
+                    aSublista = new cListaRecursiva(valor);
+                }
+                else
+                {
+                    aSublista.Agregar(valor);
+                }
+            }
+        }
+
+        public void Listar()
+        {
+            if (!EsVacia())
+            {
+                Console.WriteLine(aElemento.ToString());
+                if (aSublista != null)
+                {
+                    aSublista.Listar();
+                }
+            }
+        }
+
+        public int Ubicacion(Object valor)
+        {
+            if (aElemento.Equals(valor))
             {
                 return 1;
             }
             else
             {
-                int k = SubLista.Ubicacion(pInformacion);
-                return ((k < 0) ? 1 + k : 0);
+                return 1 + SubLista.Ubicacion(valor);
             }
         }
-    }
-
-    public void Agregar(object pInformacion)
-    {
-        if (EsVacia())
+        public void Insertar(object valor, int n)
         {
-            aInformacion = pInformacion;
+            if (!EsVacia() && (n > 0 && n <= Longitud()))
+            {
+                if (n == 1)
+                {
+                    object temp = aElemento;
+                    cListaRecursiva temp2 = aSublista;
+                    aElemento = valor;
+                    aSublista = new cListaRecursiva(temp, temp2);
+                }
+                else
+                {
+                    Insertar(valor, n - 1);
+                }
+            }
         }
-        else
+        public void Eliminar(int n)
         {
-            SubLista.Agregar(pInformacion);
+            if (!EsVacia() && (n > 0 && n <= Longitud()))
+            {
+                if (n == 1)
+                {
+                    aElemento = aSublista.Elemento;
+                    aSublista = aSublista.SubLista;
+                }
+                else
+                {
+                    aSublista.Eliminar(n - 1);
+                }
+            }
         }
-    }
+        public void Eliminar(object valor)
+        {
+            if (ExisteElemento(valor))
+            {
+                int ubi = Ubicacion(valor);
+                Eliminar(ubi);
+            }
+        }
 
-    public void Listar()
-    {
+        public bool ExisteElemento(object valor)
+        {
+            if (EsVacia())
+            {
+                return false;
+            }
+            else
+            {
+                if (aElemento == valor)
+                {
+                    return true;
+                }
+                else
+                {
+                    return SubLista.ExisteElemento(valor);
+                }
+            }
+        }
+
+        public object Iesimo(int n)
+        {
+            if (n == 1)
+            {
+                return aElemento;
+            }
+            else
+            {
+                return SubLista.Iesimo(n - 1);
+            }
+        }
+
+        public int Longitud()
+        {
+            if (EsVacia())
+            {
+                return 0;
+            }
+            else if (aSublista != null)
+            {
+                return 1 + aSublista.Longitud();
+            }
+            else
+            {
+                return 1;
+            }
+        }
+
         
-        if (SubLista == null)
-        {
-            Console.WriteLine(Informacion);
-        }
-        else
-        {
-            SubLista.Listar();
-        }
-
     }
-
-    public int Longitud()
-    {
-        if (EsVacia())
-        {
-            return 0;
-        }
-        else
-        {
-             return 1 + SubLista.Longitud();
-        }
-
-    }
-
-}
