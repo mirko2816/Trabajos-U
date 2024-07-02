@@ -36,14 +36,14 @@ class Program
                 case 3:
                     Console.Write("Ingrese el índice de la tarea a eliminar: ");
                     int indiceEliminar = int.Parse(Console.ReadLine());
-                    listaDeTareas.eEliminar(indiceEliminar);
+                    listaDeTareas.Eliminar(indiceEliminar);
                     Console.WriteLine("Tarea eliminada.");
                     break;
 
                 case 4:
                     Console.Write("Ingrese la descripción de la tarea a buscar: ");
                     string tareaABuscar = Console.ReadLine();
-                    int ubicacion = listaDeTareas.ubicacion(tareaABuscar);
+                    int ubicacion = listaDeTareas.Ubicacion(tareaABuscar);
                     if (ubicacion == -1)
                     {
                         Console.WriteLine("Tarea no encontrada.");
