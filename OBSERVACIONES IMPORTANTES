@@ -1,6 +1,11 @@
 para crear la biblioteca llamada BibliotecaTDA debemos primero crear el nuevo proyecto de tipo classlib con el comando:
 dotnet new classlib -o "BibliotecaTDA"
   - Esto debe crear una carpeta con una clase Class1.cs y el proyecto llamado BibliotecaTDA.csproj y la solucion MiBiblioteca.sln
+Para crear una nueva clase a nuestra biblioteca debemos usar el comando:
+dotnet new class -o NombreDeClase --> el -o indica el nombre de la carpeta de salida, para que no se cree ahi mismo
+  - Este comando debe crear una Carpeta con el nombre indicado y dentro una class.cs el cual podemos renombrar
+  - !!La nueva clase se compila automaticamente con el resto de clases, no debemos agregarla a la solucion manualmente como con los csproj 
 despues debemos hacer una referencia desde el Program del programa en el que queramos usar nuestras clases de la biblioteca; con el comando:
 dotnet add reference ..\Ubicacion\BibliotecaTDA\BibliotecaTDA.csproj
   - Con esto podremos usar todas las clases creadas en la carpeta de la bibliotecaTDA
+No debemos olvidar compilar la biblioteca de clases cada vez que realicemos algun cambio
