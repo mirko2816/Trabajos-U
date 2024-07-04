@@ -1,0 +1,7 @@
+Si deseamos agregar nuevas clases en las que usaremos la BibliotecaTDA
+Creamos el proyecto de consola primero
+    dotnet new console -n NombreDeProyecto
+Agregamos el proyecto de consola creado a la solucion 
+    dotnet sln add NombreDeProyecto/NombreDeProyecto.csproj
+Agregamos la referencia de la BibliotecaTDA (desde els .csproj del proyecto creado)
+    dotnet add reference ../Ubicacion/Biblioteca.csproj
