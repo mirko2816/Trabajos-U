@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BibliotecaTDA</name>
+    </assembly>
+    <members>
+        <member name="T:BibliotecaTDA.cArbol">
+            <summary>
+            Representa un arbol simple
+            </summary>
+        </member>
+        <member name="M:BibliotecaTDA.cArbol.EsVacio">
+            <summary>
+            Retorna true si los 3 atributos de nuestro arbol
+            (Raiz, Hijo y Hermano) son nulos.
+            </summary>
+            <returns>Si el arbol es vacio</returns>
+        </member>
+    </members>
+</doc>

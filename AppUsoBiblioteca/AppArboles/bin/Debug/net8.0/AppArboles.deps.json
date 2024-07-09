@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AppArboles/1.0.0": {
+        "dependencies": {
+          "BibliotecaTDA": "1.0.0"
+        },
+        "runtime": {
+          "AppArboles.dll": {}
+        }
+      },
+      "BibliotecaTDA/1.0.0": {
+        "runtime": {
+          "BibliotecaTDA.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AppArboles/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BibliotecaTDA/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

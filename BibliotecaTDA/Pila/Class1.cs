@@ -1,6 +1,6 @@
 ﻿namespace BibliotecaTDA;
 
-public class Class1
+public class cPila
 {
 
 }

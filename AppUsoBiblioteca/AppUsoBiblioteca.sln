@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppListaRecursiva", "AppLis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppColaEstacionamiento", "AppColaEstacionamiento\AppColaEstacionamiento.csproj", "{D1097414-85FE-4472-8541-98CA0A0D6D0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppArboles", "AppArboles\AppArboles.csproj", "{0B41D8BD-E1A4-4F21-8CD6-87E05B9AD1D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D1097414-85FE-4472-8541-98CA0A0D6D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1097414-85FE-4472-8541-98CA0A0D6D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1097414-85FE-4472-8541-98CA0A0D6D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B41D8BD-E1A4-4F21-8CD6-87E05B9AD1D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B41D8BD-E1A4-4F21-8CD6-87E05B9AD1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B41D8BD-E1A4-4F21-8CD6-87E05B9AD1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B41D8BD-E1A4-4F21-8CD6-87E05B9AD1D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

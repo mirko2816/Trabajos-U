@@ -1,4 +1,5 @@
-﻿public class cCola
+﻿namespace BibliotecaTDA;
+public class cCola
 {
     #region *************  ATRIBUTOS    ****************
     //**ATRIBUTOS DE METODO

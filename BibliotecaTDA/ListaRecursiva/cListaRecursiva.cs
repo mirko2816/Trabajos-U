@@ -1,4 +1,5 @@
-﻿public class cListaRecursiva
+﻿namespace BibliotecaTDA; 
+public class cListaRecursiva
     {
         private object aElemento;
         private cListaRecursiva aSublista;
