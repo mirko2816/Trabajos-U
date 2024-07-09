@@ -1,0 +1,6 @@
+/workspaces/Trabajos-U/AppUsoBiblioteca/AppColaEstacionamiento/obj/Debug/net8.0/AppColaEstacionamiento.csproj.AssemblyReference.cache
+/workspaces/Trabajos-U/AppUsoBiblioteca/AppColaEstacionamiento/obj/Debug/net8.0/AppColaEstacionamiento.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Trabajos-U/AppUsoBiblioteca/AppColaEstacionamiento/obj/Debug/net8.0/AppColaEstacionamiento.AssemblyInfoInputs.cache
+/workspaces/Trabajos-U/AppUsoBiblioteca/AppColaEstacionamiento/obj/Debug/net8.0/AppColaEstacionamiento.AssemblyInfo.cs
+/workspaces/Trabajos-U/AppUsoBiblioteca/AppColaEstacionamiento/obj/Debug/net8.0/AppColaEstacionamiento.csproj.CoreCompileInputs.cache
+/workspaces/Trabajos-U/AppUsoBiblioteca/AppColaEstacionamiento/obj/Debug/net8.0/AppColaEstacionamiento.sourcelink.json

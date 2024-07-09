@@ -11,10 +11,15 @@
         </member>
         <member name="M:BibliotecaTDA.cArbol.EsVacio">
             <summary>
-            Retorna true si los 3 atributos de nuestro arbol
-            (Raiz, Hijo y Hermano) son nulos.
+            Comprueba si la raiz del arbol apunta a null.
             </summary>
             <returns>Si el arbol es vacio</returns>
+        </member>
+        <member name="M:BibliotecaTDA.cArbol.Agregar(System.Object)">
+            <summary>
+            Agrega un hijo al arbol. Si el arbol es vacio agrega en este el objeto
+            y si no es vacio aplica el metodo al hijo.
+            </summary>
         </member>
     </members>
 </doc>

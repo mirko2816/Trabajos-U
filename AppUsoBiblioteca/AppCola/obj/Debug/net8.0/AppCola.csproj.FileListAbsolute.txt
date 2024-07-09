@@ -17,3 +17,4 @@
 /workspaces/Trabajos-U/AppUsoBiblioteca/AppCola/obj/Debug/net8.0/AppCola.pdb
 /workspaces/Trabajos-U/AppUsoBiblioteca/AppCola/obj/Debug/net8.0/AppCola.genruntimeconfig.cache
 /workspaces/Trabajos-U/AppUsoBiblioteca/AppCola/obj/Debug/net8.0/ref/AppCola.dll
+/workspaces/Trabajos-U/AppUsoBiblioteca/AppCola/bin/Debug/net8.0/BibliotecaTDA.xml
