@@ -1,58 +1,43 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
-      "BibliotecaTDA/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/BibliotecaTDA.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BibliotecaTDA.dll": {}
-        }
-      }
-    }
+    "net8.0": {}
   },
-  "libraries": {
-    "BibliotecaTDA/1.0.0": {
-      "type": "project",
-      "path": "../../BibliotecaTDA/BibliotecaTDA.csproj",
-      "msbuildProject": "../../BibliotecaTDA/BibliotecaTDA.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
     "net8.0": [
-      "BibliotecaTDA >= 1.0.0"
+      "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\BibliotecaTDA.csproj"
     ]
   },
   "packageFolders": {
-    "/home/codespace/.nuget/packages/": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/Trabajos-U/AppUsoBiblioteca/AppCola/AppCola.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppUsoBiblioteca\\AppCola\\AppCola.csproj",
       "projectName": "AppCola",
-      "projectPath": "/workspaces/Trabajos-U/AppUsoBiblioteca/AppCola/AppCola.csproj",
-      "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/Trabajos-U/AppUsoBiblioteca/AppCola/obj/",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppUsoBiblioteca\\AppCola\\AppCola.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppUsoBiblioteca\\AppCola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/codespace/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/workspaces/Trabajos-U/BibliotecaTDA/BibliotecaTDA.csproj": {
-              "projectPath": "/workspaces/Trabajos-U/BibliotecaTDA/BibliotecaTDA.csproj"
+            "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\BibliotecaTDA.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\BibliotecaTDA.csproj"
             }
           }
         }
@@ -87,8 +72,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "No se encuentra información del proyecto para \"C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\BibliotecaTDA.csproj\". Si está usando Visual Studio, puede deberse a que el proyecto no se haya cargado o no forme parte de la solución actual, por lo que debe ejecutar una restauración desde la línea de comandos. De lo contrario, puede que el archivo del proyecto no sea válido o que falten destinos necesarios para la restauración.",
+      "libraryId": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\BibliotecaTDA.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

@@ -11,15 +11,49 @@
         </member>
         <member name="M:BibliotecaTDA.cArbol.EsVacio">
             <summary>
-            Comprueba si la raiz del arbol apunta a null.
+            Determina si la raiz del arbol apunta a null.
             </summary>
             <returns>Si el arbol es vacio</returns>
         </member>
-        <member name="M:BibliotecaTDA.cArbol.Agregar(System.Object)">
+        <member name="M:BibliotecaTDA.cArbol.Agregar(BibliotecaTDA.cArbol,System.Object)">
             <summary>
-            Agrega un hijo al arbol. Si el arbol es vacio agrega en este el objeto
-            y si no es vacio aplica el metodo al hijo.
+            Agrega un subarbol hijo al subarbol padre y asigna el objeto
+            pObjeto como raiz del subarbol creado
             </summary>
+            <param name="pSubarbolPadre">Subarbol a buscar en el arbol</param>
+            /// <param name="pObjeto">Objeo a agregar en el sub arbol padre.</param>
+        </member>
+        <member name="M:BibliotecaTDA.cArbol.SubArbol(System.Object)">
+            <summary>
+            Busca en el arbol el SubArbol en el que la raiz es igual a pObjeto
+            </summary>
+            <param name="pObjeto">Objeo a buscar en nuestro arbol.</param>
+        </member>
+        <member name="M:BibliotecaTDA.cArbol.AgregarHijo(System.Object)">
+            <summary>
+            Agrega un subarbol hijo al arbol acutal, como hijo y si este ya tiene hijo
+            se agrega como hermano y asigna el objeto pObjeto a la raiz del subarbol agregado.
+            </summary>
+            <param name="pObjeto">Objeto a agregar en el subarbol agregado</param>
+        </member>
+        <member name="M:BibliotecaTDA.cArbol.AgregarHermano(System.Object)">
+            <summary>
+            Agrega un subarbol hermano al arbol acutal, como hijo y si este ya tiene un hermano,
+            aplica la operacion al siguiente hermano.
+            </summary>
+            <param name="pObjeto">Objeto a agregar en el subarbol agregado</param>
+        </member>
+        <member name="M:BibliotecaTDA.cArbol.Padre(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="pObjeto"> </param>
+        </member>
+        <member name="M:BibliotecaTDA.cArbol.EsHijo(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="pObjeto"> </param>
         </member>
     </members>
 </doc>

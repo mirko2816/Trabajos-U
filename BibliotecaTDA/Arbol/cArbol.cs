@@ -1,4 +1,6 @@
-﻿namespace BibliotecaTDA;
+﻿using System.Runtime.InteropServices.ObjectiveC;
+
+namespace BibliotecaTDA;
 
 /// <summary>
 /// Representa un arbol simple
@@ -194,5 +196,10 @@ public class cArbol
         {
             return (aHijo.Raiz.Equals(pObjeto) ? true : aHijo.EsHermano(pObjeto));
         }
+    }
+
+    public bool EsHermano(object pObjeto)
+    {
+        return false;
     }
 }

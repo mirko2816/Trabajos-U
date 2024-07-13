@@ -17,3 +17,4 @@ C:\Users\Usuario\Desktop\Trabajos-U\AppUsoBiblioteca\AppArboles\obj\Debug\net8.0
 C:\Users\Usuario\Desktop\Trabajos-U\AppUsoBiblioteca\AppArboles\obj\Debug\net8.0\AppArboles.pdb
 C:\Users\Usuario\Desktop\Trabajos-U\AppUsoBiblioteca\AppArboles\obj\Debug\net8.0\AppArboles.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\Trabajos-U\AppUsoBiblioteca\AppArboles\obj\Debug\net8.0\ref\AppArboles.dll
+C:\Users\Usuario\Desktop\Trabajos-U\AppUsoBiblioteca\AppArboles\bin\Debug\net8.0\BibliotecaTDA.xml

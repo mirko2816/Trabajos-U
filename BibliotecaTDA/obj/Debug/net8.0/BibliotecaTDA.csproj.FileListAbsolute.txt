@@ -38,3 +38,17 @@ C:/Users/Usuario/Desktop/Trabajos-U/BibliotecaTDA/bin/Debug/net8.0/BibliotecaTDA
 C:/Users/Usuario/Desktop/Trabajos-U/BibliotecaTDA/obj/Debug/net8.0/BibliotecaTDA.xml
 /workspaces/Trabajos-U/BibliotecaTDA/obj/Debug/net8.0/BibliotecaTDA.xml
 /workspaces/Trabajos-U/BibliotecaTDA/bin/Debug/net8.0/BibliotecaTDA.xml
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\obj\Debug\net8.0\BibliotecaTDA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\obj\Debug\net8.0\BibliotecaTDA.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\obj\Debug\net8.0\BibliotecaTDA.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\obj\Debug\net8.0\BibliotecaTDA.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\obj\Debug\net8.0\BibliotecaTDA.sourcelink.json
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\obj\Debug\net8.0\BibliotecaTDA.dll
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\obj\Debug\net8.0\refint\BibliotecaTDA.dll
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\obj\Debug\net8.0\BibliotecaTDA.xml
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\obj\Debug\net8.0\BibliotecaTDA.pdb
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\bin\Debug\net8.0\BibliotecaTDA.deps.json
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\bin\Debug\net8.0\BibliotecaTDA.dll
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\bin\Debug\net8.0\BibliotecaTDA.pdb
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\bin\Debug\net8.0\BibliotecaTDA.xml
+C:\Users\Usuario\Desktop\Trabajos-U\BibliotecaTDA\obj\Debug\net8.0\ref\BibliotecaTDA.dll
