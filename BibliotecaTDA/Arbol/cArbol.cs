@@ -36,11 +36,23 @@ public class cArbol
     public cArbol Hijo
     {
         get {return aHijo;} // no pueden tener set puesto que esto se manejara recursivamente
+        set {aHijo = value;}
     }
 
     public cArbol Hermano
     {
         get {return aHermano;}
+        set {aHermano = value;}
+    }
+
+    public void ModificarHijo(cArbol hijo)
+    {
+        aHijo = hijo;
+    }
+
+    public void ModificarHermano(cArbol hermano)
+    {
+        aHermano = hermano;
     }
 
     // Metodos especiales
@@ -101,7 +113,7 @@ public class cArbol
             {
                 // Busca el primer hijo (si existe)
                 cArbol arbolAux = null;
-                if (aHermano.Hijo != null)
+                if (aHijo != null)
                 {
                     arbolAux = aHijo.SubArbol(pObjeto);
                 }
@@ -200,6 +212,167 @@ public class cArbol
 
     public bool EsHermano(object pObjeto)
     {
-        return false;
+        if (EsVacio() || aHermano == null)
+        {
+            return false;
+        }
+        else
+        {
+            return (aHermano.Raiz.Equals(pObjeto)) ? true : aHermano.EsHermano(pObjeto);
+        }
+    }
+
+    public void Eliminar(cArbol pArbol)
+    {
+        if ( pArbol != null && pArbol == SubArbol(pArbol.Raiz))
+        {
+            cArbol arbolPadre = Padre(pArbol.Raiz);
+            if(arbolPadre == null)
+            {
+                aRaiz = null;
+                aHijo = null;
+                aHermano = null;
+            }
+            else
+            {
+                if (pArbol == arbolPadre.Hijo)
+                {
+                    cArbol arbolAux = arbolPadre.Hijo.Hermano;
+                    arbolPadre.ModificarHijo(arbolAux);
+                }
+                else
+                {
+                    arbolPadre.Hijo.EliminarHermano(pArbol);
+                }
+            }
+        }
+    }
+
+    protected void EliminarHermano(cArbol pArbol)
+    {
+        if (pArbol == aHermano)
+        {
+            ModificarHermano(aHermano.Hermano);
+        }
+        else
+        {
+            aHermano.EliminarHermano(pArbol);
+        }
+    }
+
+    public void Procesar()
+    {
+        if (!EsVacio())
+        {
+            Console.WriteLine(Raiz);
+        }
+    }
+
+    public void PreOrden()
+    {
+        if (!EsVacio())
+        {
+            Procesar();
+            if (aHijo != null)
+            {
+                aHijo.PreOrden();
+                aHijo.RecorrerHermanoPreorden();
+            }
+        }
+    }
+
+    protected void RecorrerHermanoPreorden()
+    {
+        if (aHermano != null)
+        {
+            aHermano.PreOrden();
+            aHermano.RecorrerHermanoPreorden();
+        }
+    }
+
+    public void InOrden()
+    {
+        if(!EsVacio())
+        {
+            if(aHijo != null)
+            {
+                aHijo.InOrden();
+
+                Procesar();
+
+                if(aHijo != null)
+                {
+                    aHijo.RecorrerHermanoInOrden();
+                }
+            }
+        }
+    }
+
+    protected void RecorrerHermanoInOrden()
+    {
+        if(aHermano != null)
+        {
+            aHermano.InOrden();
+            aHermano.RecorrerHermanoInOrden();
+        }
+    }
+
+    public void PosOrden()
+    {
+        if (!EsVacio())
+        {
+            if(aHijo != null)
+            {
+                aHijo.PosOrden();
+                aHijo.RecorrerHermanoPosOrden();
+            }
+
+            Procesar();
+        }
+    }
+
+    protected void RecorrerHermanoPosOrden()
+    {
+        if(aHermano != null)
+        {
+            aHermano.RecorrerHermanoPosOrden();
+            aHermano.PosOrden();
+        }
+    }
+
+    public int Altura()
+    {
+        if(EsVacio())
+        {
+            return 0;
+        }
+        else
+        {
+            if(aHijo != null)
+            {
+                int altura1 = 1 + aHijo.Altura();
+                int altura2 = 1 + aHijo.AlturaHermanos();
+                return (altura1>altura2?altura1:altura2);
+            }
+            else
+            {
+                return 0;
+            }
+        }
+    }
+
+    protected int AlturaHermanos()
+    {
+        if(aHermano == null)
+        {
+            return 0;
+        }
+        else
+        {
+            int altura1 = aHermano.Altura();
+            int altura2 = aHermano.AlturaHermanos();
+            return (altura1 > altura2 ? altura1 : altura2);
+        }
     }
 }
+

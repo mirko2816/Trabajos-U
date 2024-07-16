@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EFDECE79-02EB-4E8A-9357-B828FA53A618}|BibliotecaTDA.csproj|c:\\users\\usuario\\desktop\\trabajos-u\\bibliotecatda\\arbol\\carbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFDECE79-02EB-4E8A-9357-B828FA53A618}|BibliotecaTDA.csproj|solutionrelative:arbol\\carbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EFDECE79-02EB-4E8A-9357-B828FA53A618}|BibliotecaTDA.csproj|c:\\users\\usuario\\desktop\\trabajos-u\\bibliotecatda\\arbolbinario\\carbolbinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFDECE79-02EB-4E8A-9357-B828FA53A618}|BibliotecaTDA.csproj|solutionrelative:arbolbinario\\carbolbinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFDECE79-02EB-4E8A-9357-B828FA53A618}|BibliotecaTDA.csproj|c:\\users\\usuario\\desktop\\trabajos-u\\bibliotecatda\\bibliotecatda.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{EFDECE79-02EB-4E8A-9357-B828FA53A618}|BibliotecaTDA.csproj|solutionrelative:bibliotecatda.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{EFDECE79-02EB-4E8A-9357-B828FA53A618}|BibliotecaTDA.csproj|c:\\users\\usuario\\desktop\\trabajos-u\\bibliotecatda\\arbolbb\\carbolbb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFDECE79-02EB-4E8A-9357-B828FA53A618}|BibliotecaTDA.csproj|solutionrelative:arbolbb\\carbolbb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,35 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BibliotecaTDA.csproj",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\BibliotecaTDA.csproj",
-              "RelativeDocumentMoniker": "BibliotecaTDA.csproj",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\BibliotecaTDA.csproj",
-              "RelativeToolTip": "BibliotecaTDA.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-08T22:55:02.633Z"
+              "Title": "cArbolBB.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\ARBOLBB\\cArbolBB.cs",
+              "RelativeDocumentMoniker": "ARBOLBB\\cArbolBB.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\ARBOLBB\\cArbolBB.cs",
+              "RelativeToolTip": "ARBOLBB\\cArbolBB.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T01:11:10.643Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "cArbol.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\Arbol\\cArbol.cs",
-              "RelativeDocumentMoniker": "Arbol\\cArbol.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\Arbol\\cArbol.cs",
-              "RelativeToolTip": "Arbol\\cArbol.cs",
-              "ViewState": "AQIAAK8AAAAAAAAAAAAswMkAAAAFAAAA",
+              "Title": "cArbolBinario.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\ARBOLBINARIO\\cArbolBinario.cs",
+              "RelativeDocumentMoniker": "ARBOLBINARIO\\cArbolBinario.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\ARBOLBINARIO\\cArbolBinario.cs",
+              "RelativeToolTip": "ARBOLBINARIO\\cArbolBinario.cs",
+              "ViewState": "AQIAAPkAAAAAAAAAAADgvxABAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T22:52:00.758Z",
+              "WhenOpened": "2024-07-16T00:00:42.511Z",
               "EditorCaption": ""
             }
           ]
