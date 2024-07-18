@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BibliotecaTDA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ede841590b5ef3e3501227faa40bc270280f3eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c995cf85cdf84df74d9a043c9a29c1faf001a02a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BibliotecaTDA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BibliotecaTDA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

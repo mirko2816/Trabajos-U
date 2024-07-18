@@ -23,11 +23,17 @@ public class cArbolBB : cArbolBinario
         aHijoIzquierdo = null;
         aHijoDerecho = null;
     }
+
+    public cArbolBB(cArbolBB pHijoIzq, object pRaiz, cArbolBB pHijoDer)
+    {
+        aRaiz = pRaiz;
+        aHijoIzquierdo = pHijoIzq;
+        aHijoDerecho = pHijoDer;
+    }
     public static cArbolBB Crear(object pRaiz = null)
     {
         return new cArbolBB(pRaiz);
     }
-
     // Metodos
 
     public override void Agregar(Object E)

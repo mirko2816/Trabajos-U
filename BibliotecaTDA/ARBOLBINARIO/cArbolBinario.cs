@@ -7,8 +7,8 @@ public class cArbolBinario
 
     //Atributos de objeto
     protected object aRaiz;
-    protected cArbolBinario aHijoDerecho;
-    protected cArbolBinario aHijoIzquierdo;
+    public cArbolBinario aHijoDerecho;
+    public cArbolBinario aHijoIzquierdo;
 
     //Atributos de clase
     protected static DelegadoEsValido deValidar = (object X) => true;
@@ -34,6 +34,8 @@ public class cArbolBinario
     {
         return new cArbolBinario(pRaiz);
     }
+
+    
 
     // SETTERS Y GETTERS
 
@@ -139,6 +141,20 @@ public class cArbolBinario
         }
         else
             return aHijoIzquierdo.Hoja();
+
+    }
+
+    public bool EsHoja()
+    {
+        if (aHijoIzquierdo == null || aHijoIzquierdo.EsVacia())
+        {
+            if (aHijoDerecho == null || aHijoDerecho.EsVacia())
+                return true;
+            else
+                return aHijoDerecho.EsHoja();
+        }
+        else
+            return aHijoIzquierdo.EsHoja();
 
     }
 
