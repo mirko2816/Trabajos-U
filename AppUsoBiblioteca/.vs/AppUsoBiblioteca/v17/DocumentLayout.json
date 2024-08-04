@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppUsoBiblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B41D8BD-E1A4-4F21-8CD6-87E05B9AD1D4}|AppArboles\\AppArboles.csproj|c:\\users\\usuario\\desktop\\trabajos-u\\appusobiblioteca\\apparboles\\programarboles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B41D8BD-E1A4-4F21-8CD6-87E05B9AD1D4}|AppArboles\\AppArboles.csproj|solutionrelative:apparboles\\programarboles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{942C04D1-F761-4087-9081-13F1496E2D30}|AppListaRecursiva\\AppListaRecursiva.csproj|c:\\users\\usuario\\desktop\\trabajos-u\\appusobiblioteca\\applistarecursiva\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{942C04D1-F761-4087-9081-13F1496E2D30}|AppListaRecursiva\\AppListaRecursiva.csproj|solutionrelative:applistarecursiva\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{942C04D1-F761-4087-9081-13F1496E2D30}|AppListaRecursiva\\AppListaRecursiva.csproj|c:\\users\\usuario\\desktop\\trabajos-u\\appusobiblioteca\\applistarecursiva\\applistarecursiva.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{942C04D1-F761-4087-9081-13F1496E2D30}|AppListaRecursiva\\AppListaRecursiva.csproj|solutionrelative:applistarecursiva\\applistarecursiva.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3D56F94-5307-4C35-BBF7-501B9C478A95}|AppUsoBiblioteca.csproj|c:\\users\\usuario\\desktop\\trabajos-u\\appusobiblioteca\\instrucciones||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -18,11 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppUsoBiblioteca\\AppListaRecursiva\\Program.cs",
+              "RelativeDocumentMoniker": "AppListaRecursiva\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppUsoBiblioteca\\AppListaRecursiva\\Program.cs",
+              "RelativeToolTip": "AppListaRecursiva\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T18:52:29.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AppListaRecursiva",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppUsoBiblioteca\\AppListaRecursiva\\AppListaRecursiva.csproj",
+              "RelativeDocumentMoniker": "AppListaRecursiva\\AppListaRecursiva.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppUsoBiblioteca\\AppListaRecursiva\\AppListaRecursiva.csproj",
+              "RelativeToolTip": "AppListaRecursiva\\AppListaRecursiva.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-04T18:52:11.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Instrucciones",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppUsoBiblioteca\\Instrucciones",
               "RelativeDocumentMoniker": "Instrucciones",
@@ -31,19 +61,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-07-13T04:30:44.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProgramArboles.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppUsoBiblioteca\\AppArboles\\ProgramArboles.cs",
-              "RelativeDocumentMoniker": "AppArboles\\ProgramArboles.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\AppUsoBiblioteca\\AppArboles\\ProgramArboles.cs",
-              "RelativeToolTip": "AppArboles\\ProgramArboles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T04:24:05.542Z",
               "EditorCaption": ""
             }
           ]
