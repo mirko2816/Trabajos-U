@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\BibliotecaTDA.csproj",
-      "projectName": "BibliotecaTDA",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\BibliotecaTDA.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\AppGrafosLima\\AppGrafos\\AppGrafos.csproj",
+      "projectName": "AppGrafos",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\AppGrafosLima\\AppGrafos\\AppGrafos.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U\\BibliotecaTDA\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\AppGrafosLima\\AppGrafos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
