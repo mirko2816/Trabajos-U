@@ -1,0 +1,14 @@
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\obj\Debug\net6.0\ExamenPrograII.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\obj\Debug\net6.0\ExamenPrograII.AssemblyInfoInputs.cache
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\obj\Debug\net6.0\ExamenPrograII.AssemblyInfo.cs
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\obj\Debug\net6.0\ExamenPrograII.csproj.CoreCompileInputs.cache
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\bin\Debug\net6.0\ExamenPrograII.exe
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\bin\Debug\net6.0\ExamenPrograII.deps.json
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\bin\Debug\net6.0\ExamenPrograII.runtimeconfig.json
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\bin\Debug\net6.0\ExamenPrograII.dll
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\bin\Debug\net6.0\ExamenPrograII.pdb
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\obj\Debug\net6.0\ExamenPrograII.dll
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\obj\Debug\net6.0\refint\ExamenPrograII.dll
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\obj\Debug\net6.0\ExamenPrograII.pdb
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\obj\Debug\net6.0\ExamenPrograII.genruntimeconfig.cache
+C:\Users\AlumnoDAII\Desktop\a\EXAMEN PROGRA II\ExamenPrograII\ExamenPrograII\obj\Debug\net6.0\ref\ExamenPrograII.dll
